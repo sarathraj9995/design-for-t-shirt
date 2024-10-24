@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>T-Shirt Designer</h1>
+
+    <!-- Upload Design Section -->
+    <input type="file" id="upload" accept="image/*" />
+
+    <!-- T-Shirt Display Section -->
+    <div class="tshirt-container">
+      <img src="tshirt.png" id="tshirt" alt="T-Shirt">
+      <img id="design" alt="Your Design" style="display: none;">
+    </div>
+
+    <!-- Buttons for Preview and Download -->
+    <button id="download-btn">Download Design</button>
+
+    <!-- Canvas for Downloading -->
+    <canvas id="canvas" style="display: none;"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
